@@ -1,0 +1,8 @@
+<h1>Products</h1>
+<div *ngFor="let product of products" style="width: 300px;">
+  <product-detail [product]='product'></product-detail>
+</div>
+<div style="margin-top:20px;">
+  <button type="button" class="button btn-danger" (click)='deleteProducts()'>Delete All</button>
+</div>
+
